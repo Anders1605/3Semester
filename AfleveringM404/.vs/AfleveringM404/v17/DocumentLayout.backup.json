@@ -7,8 +7,27 @@
       "RelativeMoniker": "D:0:0:{653D060C-9974-44D4-8018-8C9BB3C15008}|AfleveringM404.csproj|solutionrelative:services\\cosmosdbservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{653D060C-9974-44D4-8018-8C9BB3C15008}|AfleveringM404.csproj|d:\\dokumenter\\git\\3semester\\afleveringm404\\models\\supportmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{653D060C-9974-44D4-8018-8C9BB3C15008}|AfleveringM404.csproj|solutionrelative:models\\supportmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{653D060C-9974-44D4-8018-8C9BB3C15008}|AfleveringM404.csproj|d:\\dokumenter\\git\\3semester\\afleveringm404\\components\\pages\\viewtickets.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{653D060C-9974-44D4-8018-8C9BB3C15008}|AfleveringM404.csproj|solutionrelative:components\\pages\\viewtickets.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{653D060C-9974-44D4-8018-8C9BB3C15008}|AfleveringM404.csproj|d:\\dokumenter\\git\\3semester\\afleveringm404\\components\\pages\\requestsupport.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{653D060C-9974-44D4-8018-8C9BB3C15008}|AfleveringM404.csproj|solutionrelative:components\\pages\\requestsupport.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{653D060C-9974-44D4-8018-8C9BB3C15008}|AfleveringM404.csproj|d:\\dokumenter\\git\\3semester\\afleveringm404\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{653D060C-9974-44D4-8018-8C9BB3C15008}|AfleveringM404.csproj|solutionrelative:components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{653D060C-9974-44D4-8018-8C9BB3C15008}|AfleveringM404.csproj|d:\\dokumenter\\git\\3semester\\afleveringm404\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{653D060C-9974-44D4-8018-8C9BB3C15008}|AfleveringM404.csproj|solutionrelative:components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{653D060C-9974-44D4-8018-8C9BB3C15008}|AfleveringM404.csproj|d:\\dokumenter\\git\\3semester\\afleveringm404\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{653D060C-9974-44D4-8018-8C9BB3C15008}|AfleveringM404.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Andrs\\.nuget\\packages\\microsoft.azure.cosmos\\3.54.0\\buildTransitive\\netstandard2.0\\Microsoft.Azure.Cosmos.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{653D060C-9974-44D4-8018-8C9BB3C15008}|AfleveringM404.csproj|d:\\dokumenter\\git\\3semester\\afleveringm404\\models\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -22,7 +41,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,15 +57,77 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "D:\\Dokumenter\\GIT\\3Semester\\AfleveringM404\\Components\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "Components\\Layout\\NavMenu.razor",
+              "ToolTip": "D:\\Dokumenter\\GIT\\3Semester\\AfleveringM404\\Components\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "Components\\Layout\\NavMenu.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-20T11:49:28.796Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ViewTickets.razor",
+              "DocumentMoniker": "D:\\Dokumenter\\GIT\\3Semester\\AfleveringM404\\Components\\Pages\\ViewTickets.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\ViewTickets.razor",
+              "ToolTip": "D:\\Dokumenter\\GIT\\3Semester\\AfleveringM404\\Components\\Pages\\ViewTickets.razor",
+              "RelativeToolTip": "Components\\Pages\\ViewTickets.razor",
+              "ViewState": "AgIAACIAAAAAAAAAAAAQwEAAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-20T11:49:02.744Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Contact.cs",
-              "DocumentMoniker": "D:\\Dokumenter\\GIT\\3Semester\\AfleveringM404\\Models\\Contact.cs",
-              "RelativeDocumentMoniker": "Models\\Contact.cs",
-              "ToolTip": "D:\\Dokumenter\\GIT\\3Semester\\AfleveringM404\\Models\\Contact.cs",
-              "RelativeToolTip": "Models\\Contact.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Title": "RequestSupport.razor",
+              "DocumentMoniker": "D:\\Dokumenter\\GIT\\3Semester\\AfleveringM404\\Components\\Pages\\RequestSupport.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\RequestSupport.razor",
+              "ToolTip": "D:\\Dokumenter\\GIT\\3Semester\\AfleveringM404\\Components\\Pages\\RequestSupport.razor",
+              "RelativeToolTip": "Components\\Pages\\RequestSupport.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-20T11:47:49.764Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Microsoft.Azure.Cosmos.targets",
+              "DocumentMoniker": "C:\\Users\\Andrs\\.nuget\\packages\\microsoft.azure.cosmos\\3.54.0\\buildTransitive\\netstandard2.0\\Microsoft.Azure.Cosmos.targets",
+              "ToolTip": "C:\\Users\\Andrs\\.nuget\\packages\\microsoft.azure.cosmos\\3.54.0\\buildTransitive\\netstandard2.0\\Microsoft.Azure.Cosmos.targets",
+              "ViewState": "AgIAADgAAAAAAAAAAAAEwEgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-10-20T09:34:24.569Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Dokumenter\\GIT\\3Semester\\AfleveringM404\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Dokumenter\\GIT\\3Semester\\AfleveringM404\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T08:12:44.596Z",
+              "WhenOpened": "2025-10-20T09:28:07.398Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Home.razor",
+              "DocumentMoniker": "D:\\Dokumenter\\GIT\\3Semester\\AfleveringM404\\Components\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\Home.razor",
+              "ToolTip": "D:\\Dokumenter\\GIT\\3Semester\\AfleveringM404\\Components\\Pages\\Home.razor",
+              "RelativeToolTip": "Components\\Pages\\Home.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-20T09:21:46.026Z",
               "EditorCaption": ""
             },
             {
@@ -57,23 +138,22 @@
               "RelativeDocumentMoniker": "Services\\CosmosDBService.cs",
               "ToolTip": "D:\\Dokumenter\\GIT\\3Semester\\AfleveringM404\\Services\\CosmosDBService.cs",
               "RelativeToolTip": "Services\\CosmosDBService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAABIAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T07:54:14.047Z",
+              "WhenOpened": "2025-10-20T08:46:38.849Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SupportMessage.cs",
-              "DocumentMoniker": "D:\\Dokumenter\\GIT\\3Semester\\AfleveringM404\\Models\\SupportMessage.cs",
-              "RelativeDocumentMoniker": "Models\\SupportMessage.cs",
-              "ToolTip": "D:\\Dokumenter\\GIT\\3Semester\\AfleveringM404\\Models\\SupportMessage.cs",
-              "RelativeToolTip": "Models\\SupportMessage.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAANAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "Contact.cs",
+              "DocumentMoniker": "D:\\Dokumenter\\GIT\\3Semester\\AfleveringM404\\Models\\Contact.cs",
+              "RelativeDocumentMoniker": "Models\\Contact.cs",
+              "ToolTip": "D:\\Dokumenter\\GIT\\3Semester\\AfleveringM404\\Models\\Contact.cs",
+              "RelativeToolTip": "Models\\Contact.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T07:51:51.144Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-20T08:12:44.596Z"
             }
           ]
         },

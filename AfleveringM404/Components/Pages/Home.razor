@@ -1,7 +1,19 @@
 ﻿@page "/"
+@inject Services.CosmosDBService cosmosService
 
 <PageTitle>Home</PageTitle>
 
-<h1>Hello, world!</h1>
+<h1>Welcome</h1>
 
-Welcome to your new app.
+Hi, welcome to IBAS Cycling. 
+
+@code {
+	private async void test(){
+		cosmosService.TestConnection();
+	}
+	protected override Task OnInitializedAsync()
+	{
+		test();
+		return base.OnInitializedAsync();
+	}
+}
