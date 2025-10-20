@@ -1,7 +1,20 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Dokumenter\\GIT\\3Semester\\AfleveringM404\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{653D060C-9974-44D4-8018-8C9BB3C15008}|AfleveringM404.csproj|d:\\dokumenter\\git\\3semester\\afleveringm404\\services\\cosmosdbservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{653D060C-9974-44D4-8018-8C9BB3C15008}|AfleveringM404.csproj|solutionrelative:services\\cosmosdbservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{653D060C-9974-44D4-8018-8C9BB3C15008}|AfleveringM404.csproj|d:\\dokumenter\\git\\3semester\\afleveringm404\\models\\supportmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{653D060C-9974-44D4-8018-8C9BB3C15008}|AfleveringM404.csproj|solutionrelative:models\\supportmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{653D060C-9974-44D4-8018-8C9BB3C15008}|AfleveringM404.csproj|d:\\dokumenter\\git\\3semester\\afleveringm404\\models\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{653D060C-9974-44D4-8018-8C9BB3C15008}|AfleveringM404.csproj|solutionrelative:models\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,6 +35,45 @@
             {
               "$type": "Bookmark",
               "Name": "ST:131:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Contact.cs",
+              "DocumentMoniker": "D:\\Dokumenter\\GIT\\3Semester\\AfleveringM404\\Models\\Contact.cs",
+              "RelativeDocumentMoniker": "Models\\Contact.cs",
+              "ToolTip": "D:\\Dokumenter\\GIT\\3Semester\\AfleveringM404\\Models\\Contact.cs",
+              "RelativeToolTip": "Models\\Contact.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T08:12:44.596Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CosmosDBService.cs",
+              "DocumentMoniker": "D:\\Dokumenter\\GIT\\3Semester\\AfleveringM404\\Services\\CosmosDBService.cs",
+              "RelativeDocumentMoniker": "Services\\CosmosDBService.cs",
+              "ToolTip": "D:\\Dokumenter\\GIT\\3Semester\\AfleveringM404\\Services\\CosmosDBService.cs",
+              "RelativeToolTip": "Services\\CosmosDBService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T07:54:14.047Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SupportMessage.cs",
+              "DocumentMoniker": "D:\\Dokumenter\\GIT\\3Semester\\AfleveringM404\\Models\\SupportMessage.cs",
+              "RelativeDocumentMoniker": "Models\\SupportMessage.cs",
+              "ToolTip": "D:\\Dokumenter\\GIT\\3Semester\\AfleveringM404\\Models\\SupportMessage.cs",
+              "RelativeToolTip": "Models\\SupportMessage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T07:51:51.144Z",
+              "EditorCaption": ""
             }
           ]
         },
