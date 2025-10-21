@@ -1,48 +1,67 @@
 ﻿@page "/viewtickets"
-@using Models;
-@using Services;
-@inject CosmosDBService cosmosService;
+@using Models
+@using Services
+@inject CosmosDBService cosmosService
 
-<h3>View Tickets</h3>
-@if(allTickets == null)
+<h3 class="mb-4">View Support Tickets</h3>
+
+@if (allTickets == null)
 {
-    <p><em>Loading...</em></p>
+    <div class="text-center text-muted">
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <p class="mt-2">Loading tickets...</p>
+    </div>
+}
+else if (!allTickets.Any())
+{
+    <div class="alert alert-info">
+        <strong>No tickets found</strong> — your database is currently empty.
+    </div>
 }
 else
 {
-    @if(allTickets.Count() == 0)
-    {
-        <p><em>No tickets found in database...</em></p>
-    }
-    else
-    {
-        <table>
-        <tr>
-            <th>TicketId</th>
-            <th>Category</th>
-            <th>Description</th>
-            <th>Submissiondate</th>
-		    <th colspan="3">Created by</th>
-        </tr>
-        @foreach (var ticket in allTickets)
-        {
-            <tr>
-                <td>@ticket.TicketId</td>
-                <td>@ticket.Category</td>
-                <td>@ticket.Description</td>
-                <td>@ticket.Date</td>
-                <td>@ticket.Contact</td>
-                <td>@ticket.ContactEmail</td>
-                <td>@ticket.ContactPhoneNumber</td>
-            </tr>
-        }
+    <div class="table-responsive shadow-sm rounded">
+        <table class="table table-striped align-middle table-hover">
+            <thead class="table-primary">
+                <tr>
+                    <th scope="col">Ticket ID</th>
+                    <th scope="col">Category</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Submission Date</th>
+                    <th colspan="3" scope="colgroup">Created By</th>
+                </tr>
+                <tr class="table-light">
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var ticket in allTickets.OrderBy(t => t.TicketId))
+                {
+                    <tr>
+                        <td class="fw-semibold">@ticket.TicketId</td>
+                        <td>@ticket.Category</td>
+                        <td>@ticket.Description</td>
+                        <td>@ticket.Date.ToString("yyyy-MM-dd")</td>
+                        <td>@ticket.Contact</td>
+                        <td>@ticket.ContactEmail</td>
+                        <td>@ticket.ContactPhoneNumber</td>
+                    </tr>
+                }
+            </tbody>
         </table>
-    }
-
+    </div>
 }
 
 @code {
-    public List<SupportMessage> allTickets = new List<SupportMessage>();
+    private List<SupportMessage> allTickets;
 
     protected override async Task OnInitializedAsync()
     {

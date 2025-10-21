@@ -42,10 +42,16 @@ namespace AfleveringM404.Services
 
         public async Task<SupportMessage> CreateNewSupportMessage(SupportMessage message)
         {
+            //setting ID this way is inefficient. Needs update. 
+            var listOfSupportMessages = await GetAllSupportMessagesAsync();
+            int lastId = listOfSupportMessages.Last().TicketId;
+            message.TicketId = lastId+1;
+
             var response = await container.CreateItemAsync<SupportMessage>(
                 message,
                 new PartitionKey(message.Category)
                 );
+            Console.WriteLine("SupportMessage Created");
             return response.Resource;
         }
 
@@ -60,6 +66,7 @@ namespace AfleveringM404.Services
                 var response = await iterator.ReadNextAsync();
                 results.AddRange(response.Resource);
             }
+            Console.WriteLine("All supportmessages fetched");
             return results;
         }
     }

@@ -3,17 +3,32 @@
 
 <PageTitle>Home</PageTitle>
 
-<h1>Welcome</h1>
+<div class="container text-center mt-5">
+	<h1 class="display-5 fw-bold mb-4">Welcome to IBAS Cycling</h1>
 
-Hi, welcome to IBAS Cycling. 
+	<p class="lead text-muted mb-4">
+		We're glad to have you here! Explore our services, report issues, or request support — we’re here to help.
+	</p>
+
+	<img src="img/fpPic.png"
+		 alt="Cycling Image"
+		 class="img-fluid rounded shadow-lg mb-4"
+		 style="max-width: 500px;" />
+
+	<p class="text-secondary">
+		Your ride, our support — every step of the way. 
+	</p>
+</div>
 
 @code {
-	private async void test(){
-		cosmosService.TestConnection();
+	
+	protected override Task OnInitializedAsync() 
+	{ 
+		test(); 
+		return base.OnInitializedAsync(); 
 	}
-	protected override Task OnInitializedAsync()
-	{
-		test();
-		return base.OnInitializedAsync();
+	private async void test() 
+	{ 
+		cosmosService.TestConnection(); 
 	}
 }

@@ -1,9 +1,12 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Newtonsoft.Json;
+using System.ComponentModel.DataAnnotations;
 
 namespace AfleveringM404.Models
 {
     public class SupportMessage
     {
+        [JsonProperty("id")]
+        public string Id { get; set; } = Guid.NewGuid().ToString();
         public int TicketId { get; set; }
         [Required]
         public string Contact { get; set; }

@@ -1,68 +1,67 @@
-﻿@page "/requestsupport"
-@using Models;
-@using Services;
-@inject CosmosDBService cosmosService;
+﻿@rendermode InteractiveServer
+@page "/requestsupport"
+@using Models
+@using Services
+@inject CosmosDBService cosmosService
 
-<h3>Request support</h3>
+<div class="container mt-4">
+    <div class="card shadow-sm border-0">
+        <div class="card-body">
+            <h3 class="card-title mb-4">Request Support</h3>
 
-<EditForm Model="message" OnValidSubmit="SubmitSupportRequest">
-    <DataAnnotationsValidator />
-    <ValidationSummary />
+            <EditForm Model="@message" OnValidSubmit="SubmitSupportRequest" FormName="SubmitMessage">
+                <DataAnnotationsValidator />
+                <ValidationSummary class="text-danger mb-3" />
 
-    <div>
-        <input placeholder="Contact Name" @bind="message.Contact" />
-        <ValidationMessage For="@(() => message.Contact)" />
-    </div>
+                <div class="mb-3">
+                    <label class="form-label">Contact Name</label>
+                    <InputText class="form-control" @bind-Value="message.Contact" placeholder="Enter your name" />
+                </div>
 
-    <div>
-        <input placeholder="Email" type="email" @bind="message.ContactEmail" />
-        <ValidationMessage For="@(() => message.ContactEmail)" />
-    </div>
+                <div class="mb-3">
+                    <label class="form-label">Email</label>
+                    <InputText class="form-control" @bind-Value="message.ContactEmail" placeholder="Enter your email" />
+                </div>
 
-    <div>
-        <input placeholder="Phone" type="tel" @bind="message.ContactPhoneNumber" />
-        <ValidationMessage For="@(() => message.ContactPhoneNumber)" />
-    </div>
+                <div class="mb-3">
+                    <label class="form-label">Phone</label>
+                    <InputText class="form-control" @bind-Value="message.ContactPhoneNumber" placeholder="Enter phone number" />
+                </div>
 
-    <div>
-        <label>Category:</label>
-        <select @bind="message.Category">
-            <option value="">-- Select Category --</option>
-            @foreach (var c in categories)
+                <div class="mb-3">
+                    <label class="form-label">Category</label>
+                    <InputSelect class="form-select" @bind-Value="message.Category">
+                        <option value="">-- Select Category --</option>
+                        @foreach (var c in categories)
+                        {
+                            <option value="@c">@c</option>
+                        }
+                    </InputSelect>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Description</label>
+                    <InputTextArea class="form-control" @bind-Value="message.Description" rows="3" placeholder="Describe your issue..." />
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100">Submit</button>
+            </EditForm>
+
+            @if (showConfirmation)
             {
-                <option value="@c">@c</option>
+                <div class="alert alert-success mt-3 mb-0 text-center">
+                    ✅ Support request submitted successfully!
+                </div>
             }
-        </select>
-        <ValidationMessage For="@(() => message.Category)" />
+        </div>
     </div>
-
-    <div>
-        <textarea placeholder="Description" @bind="message.Description"></textarea>
-        <ValidationMessage For="@(() => message.Description)" />
-    </div>
-
-    <button type="submit">Submit</button>
-</EditForm>
-
-<div>
-	<button @onclick="SubmitSupportRequest">Submit</button>
 </div>
 
-
-@if (showConfirmation)
-{
-	<p style="color: green;">Support request submitted successfully!</p>
-}
-
 @code {
-    SupportMessage message = new SupportMessage();
-    string contact = string.Empty;
-    string contactEmail = string.Empty;
-    string contactPhoneNumber = string.Empty;
-    string category = string.Empty;
-    string description = string.Empty;
-    bool showConfirmation = false;
-    List<string> categories = new List<string>
+    private SupportMessage message = new SupportMessage();
+    private bool showConfirmation = false;
+
+    private List<string> categories = new()
     {
         "Sales",
         "Defects",
@@ -70,11 +69,17 @@
         "Billing",
         "Other"
     };
-    //Indsæt metode til validering og metode til at create ny message. Sørg for at de også opdateres på siden. Create bør returnere en bool som bruges til at kalde visningen af en bekræftelse. 
+
+    protected override void OnInitialized()
+    {
+        message = new SupportMessage();
+        showConfirmation = false;
+    }
 
     private async Task SubmitSupportRequest()
     {
         await cosmosService.CreateNewSupportMessage(message);
-        message = new SupportMessage();
+        showConfirmation = true;
+        message = new SupportMessage(); // reset form
     }
 }
