@@ -1,6 +1,9 @@
 # 3Semester
 TBU for hand-ins and small projects for my 3rd semester. 
+
 # Afleveringsopgave M4.04
+
+Lavet af Anders Otte. 
 
 ## Formål
 Projektet har til formål at give erfaring med **anvendelse og opsætning af Cosmos DB** gennem en Azure-konto.
