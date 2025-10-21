@@ -22,51 +22,30 @@ else
             <th>Category</th>
             <th>Description</th>
             <th>Submissiondate</th>
-            <th>Created by</th>
+		    <th colspan="3">Created by</th>
         </tr>
         @foreach (var ticket in allTickets)
         {
             <tr>
-                <td>@ticket.TicketID</td>
+                <td>@ticket.TicketId</td>
                 <td>@ticket.Category</td>
                 <td>@ticket.Description</td>
-                <td>@ticket.Date.Date</td>
-                <td>@ticket.Contact.FirstName @ticket.Contact.LastName<br>
-                    <button @onclick="() => ViewDetails(ticket.Contact)">View contactdetails</button></td>
+                <td>@ticket.Date</td>
+                <td>@ticket.Contact</td>
+                <td>@ticket.ContactEmail</td>
+                <td>@ticket.ContactPhoneNumber</td>
             </tr>
         }
         </table>
-
-        <h4>Contactdetails</h4>
-        <p>First Name: @contactToView.FirstName</p>
-        <p>Last Name: @contactToView.LastName</p>
-        <p>Email: @contactToView.Email</p>
-        @if(contactToView.Phone != null)
-        {
-            <p>Telephone: @contactToView.Phone</p>
-        }
-        else
-        {
-            <p>Telephone: <em>No phonenumber submitted</em></p>
-        }
     }
 
 }
 
-
-
 @code {
     public List<SupportMessage> allTickets = new List<SupportMessage>();
-    public bool contactViewClicked = false;
-    public Contact contactToView;
 
     protected override async Task OnInitializedAsync()
     {
-        // allTickets = await cosmosService.GetAllTickets();
-    }
-
-    private void ViewDetails(Contact contactDetailsToView)
-    {
-        contactToView = contactDetailsToView;
+        allTickets = await cosmosService.GetAllSupportMessagesAsync();
     }
 }

@@ -21,7 +21,7 @@ namespace AfleveringM404.Services
         {
             client = new CosmosClient(accountEndpoint, accountKey);
             database = client.GetDatabase("IBasSupportDB");
-            container = database.GetContainer("ibassupport");
+            container = database.GetContainer("ibassupport1");
         }
 
         //Quick test to ensure successful connection. 
@@ -40,9 +40,27 @@ namespace AfleveringM404.Services
             }
         }
 
-        private async List<SupportMessage> GetAllTickets()
+        public async Task<SupportMessage> CreateNewSupportMessage(SupportMessage message)
         {
-            return "";
+            var response = await container.CreateItemAsync<SupportMessage>(
+                message,
+                new PartitionKey(message.Category)
+                );
+            return response.Resource;
+        }
+
+        public async Task<List<SupportMessage>> GetAllSupportMessagesAsync()
+        {
+            var query = "SELECT * FROM c";
+            var iterator = container.GetItemQueryIterator<SupportMessage>(query);
+
+            var results = new List<SupportMessage>();
+            while (iterator.HasMoreResults)
+            {
+                var response = await iterator.ReadNextAsync();
+                results.AddRange(response.Resource);
+            }
+            return results;
         }
     }
 }

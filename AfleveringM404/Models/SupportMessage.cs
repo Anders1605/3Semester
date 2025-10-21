@@ -4,27 +4,19 @@ namespace AfleveringM404.Models
 {
     public class SupportMessage
     {
-        public int TicketID { get; set; }
+        public int TicketId { get; set; }
         [Required]
-        public Contact Contact { get; set; }
+        public string Contact { get; set; }
+        [Required]
+        [EmailAddress]
+        public string ContactEmail { get; set; }
+        public string ContactPhoneNumber { get; set; }
         [Required]
         public string Category { get; set; } = string.Empty;
         [Required]
         public string Description {  get; set; } = string.Empty;
         [Required]
-        public DateTime Date { get; init; } = DateTime.Now;
+        public DateOnly Date { get; init; } = DateOnly.FromDateTime(DateTime.Now);
 
-        public SupportMessage(Contact contact, string category, string description)
-        {
-            Contact = new Contact()
-            {
-                FirstName = contact.FirstName,
-                LastName = contact.LastName,
-                Email = contact.Email,
-                Phone = contact.Phone
-            };
-            Category = category;
-            Description = description;
-        }
     }
 }

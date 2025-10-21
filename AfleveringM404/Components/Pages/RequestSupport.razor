@@ -5,6 +5,76 @@
 
 <h3>Request support</h3>
 
-@code {
+<EditForm Model="message" OnValidSubmit="SubmitSupportRequest">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
 
+    <div>
+        <input placeholder="Contact Name" @bind="message.Contact" />
+        <ValidationMessage For="@(() => message.Contact)" />
+    </div>
+
+    <div>
+        <input placeholder="Email" type="email" @bind="message.ContactEmail" />
+        <ValidationMessage For="@(() => message.ContactEmail)" />
+    </div>
+
+    <div>
+        <input placeholder="Phone" type="tel" @bind="message.ContactPhoneNumber" />
+        <ValidationMessage For="@(() => message.ContactPhoneNumber)" />
+    </div>
+
+    <div>
+        <label>Category:</label>
+        <select @bind="message.Category">
+            <option value="">-- Select Category --</option>
+            @foreach (var c in categories)
+            {
+                <option value="@c">@c</option>
+            }
+        </select>
+        <ValidationMessage For="@(() => message.Category)" />
+    </div>
+
+    <div>
+        <textarea placeholder="Description" @bind="message.Description"></textarea>
+        <ValidationMessage For="@(() => message.Description)" />
+    </div>
+
+    <button type="submit">Submit</button>
+</EditForm>
+
+<div>
+	<button @onclick="SubmitSupportRequest">Submit</button>
+</div>
+
+
+@if (showConfirmation)
+{
+	<p style="color: green;">Support request submitted successfully!</p>
+}
+
+@code {
+    SupportMessage message = new SupportMessage();
+    string contact = string.Empty;
+    string contactEmail = string.Empty;
+    string contactPhoneNumber = string.Empty;
+    string category = string.Empty;
+    string description = string.Empty;
+    bool showConfirmation = false;
+    List<string> categories = new List<string>
+    {
+        "Sales",
+        "Defects",
+        "Repair",
+        "Billing",
+        "Other"
+    };
+    //Indsæt metode til validering og metode til at create ny message. Sørg for at de også opdateres på siden. Create bør returnere en bool som bruges til at kalde visningen af en bekræftelse. 
+
+    private async Task SubmitSupportRequest()
+    {
+        await cosmosService.CreateNewSupportMessage(message);
+        message = new SupportMessage();
+    }
 }

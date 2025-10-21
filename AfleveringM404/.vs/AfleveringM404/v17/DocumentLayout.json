@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "D:\\Dokumenter\\GIT\\3Semester\\AfleveringM404\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{653D060C-9974-44D4-8018-8C9BB3C15008}|AfleveringM404.csproj|d:\\dokumenter\\git\\3semester\\afleveringm404\\services\\cosmosdbservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{653D060C-9974-44D4-8018-8C9BB3C15008}|AfleveringM404.csproj|solutionrelative:services\\cosmosdbservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{653D060C-9974-44D4-8018-8C9BB3C15008}|AfleveringM404.csproj|d:\\dokumenter\\git\\3semester\\afleveringm404\\models\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{653D060C-9974-44D4-8018-8C9BB3C15008}|AfleveringM404.csproj|solutionrelative:models\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{653D060C-9974-44D4-8018-8C9BB3C15008}|AfleveringM404.csproj|d:\\dokumenter\\git\\3semester\\afleveringm404\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{653D060C-9974-44D4-8018-8C9BB3C15008}|AfleveringM404.csproj|solutionrelative:components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{653D060C-9974-44D4-8018-8C9BB3C15008}|AfleveringM404.csproj|d:\\dokumenter\\git\\3semester\\afleveringm404\\components\\pages\\requestsupport.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{653D060C-9974-44D4-8018-8C9BB3C15008}|AfleveringM404.csproj|solutionrelative:components\\pages\\requestsupport.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{653D060C-9974-44D4-8018-8C9BB3C15008}|AfleveringM404.csproj|d:\\dokumenter\\git\\3semester\\afleveringm404\\components\\pages\\viewtickets.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{653D060C-9974-44D4-8018-8C9BB3C15008}|AfleveringM404.csproj|solutionrelative:components\\pages\\viewtickets.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{653D060C-9974-44D4-8018-8C9BB3C15008}|AfleveringM404.csproj|d:\\dokumenter\\git\\3semester\\afleveringm404\\components\\pages\\requestsupport.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{653D060C-9974-44D4-8018-8C9BB3C15008}|AfleveringM404.csproj|solutionrelative:components\\pages\\requestsupport.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{653D060C-9974-44D4-8018-8C9BB3C15008}|AfleveringM404.csproj|d:\\dokumenter\\git\\3semester\\afleveringm404\\models\\supportmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{653D060C-9974-44D4-8018-8C9BB3C15008}|AfleveringM404.csproj|solutionrelative:models\\supportmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{653D060C-9974-44D4-8018-8C9BB3C15008}|AfleveringM404.csproj|d:\\dokumenter\\git\\3semester\\afleveringm404\\services\\cosmosdbservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{653D060C-9974-44D4-8018-8C9BB3C15008}|AfleveringM404.csproj|solutionrelative:services\\cosmosdbservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{653D060C-9974-44D4-8018-8C9BB3C15008}|AfleveringM404.csproj|d:\\dokumenter\\git\\3semester\\afleveringm404\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{653D060C-9974-44D4-8018-8C9BB3C15008}|AfleveringM404.csproj|solutionrelative:components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{653D060C-9974-44D4-8018-8C9BB3C15008}|AfleveringM404.csproj|d:\\dokumenter\\git\\3semester\\afleveringm404\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -41,8 +41,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 6,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SupportMessage.cs",
+              "DocumentMoniker": "D:\\Dokumenter\\GIT\\3Semester\\AfleveringM404\\Models\\SupportMessage.cs",
+              "RelativeDocumentMoniker": "Models\\SupportMessage.cs",
+              "ToolTip": "D:\\Dokumenter\\GIT\\3Semester\\AfleveringM404\\Models\\SupportMessage.cs",
+              "RelativeToolTip": "Models\\SupportMessage.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAADwvxMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T17:38:00.444Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
@@ -65,31 +78,30 @@
               "RelativeToolTip": "Components\\Layout\\NavMenu.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-20T11:49:28.796Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-20T11:49:28.796Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "ViewTickets.razor",
               "DocumentMoniker": "D:\\Dokumenter\\GIT\\3Semester\\AfleveringM404\\Components\\Pages\\ViewTickets.razor",
               "RelativeDocumentMoniker": "Components\\Pages\\ViewTickets.razor",
               "ToolTip": "D:\\Dokumenter\\GIT\\3Semester\\AfleveringM404\\Components\\Pages\\ViewTickets.razor",
               "RelativeToolTip": "Components\\Pages\\ViewTickets.razor",
-              "ViewState": "AgIAACIAAAAAAAAAAAAQwEAAAAA8AAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAAAywBgAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-10-20T11:49:02.744Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "RequestSupport.razor",
               "DocumentMoniker": "D:\\Dokumenter\\GIT\\3Semester\\AfleveringM404\\Components\\Pages\\RequestSupport.razor",
               "RelativeDocumentMoniker": "Components\\Pages\\RequestSupport.razor",
               "ToolTip": "D:\\Dokumenter\\GIT\\3Semester\\AfleveringM404\\Components\\Pages\\RequestSupport.razor",
               "RelativeToolTip": "Components\\Pages\\RequestSupport.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAD8AAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-10-20T11:47:49.764Z",
               "EditorCaption": ""
@@ -114,12 +126,11 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T09:28:07.398Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-20T09:28:07.398Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Home.razor",
               "DocumentMoniker": "D:\\Dokumenter\\GIT\\3Semester\\AfleveringM404\\Components\\Pages\\Home.razor",
               "RelativeDocumentMoniker": "Components\\Pages\\Home.razor",
@@ -127,33 +138,19 @@
               "RelativeToolTip": "Components\\Pages\\Home.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-20T09:21:46.026Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-20T09:21:46.026Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "CosmosDBService.cs",
               "DocumentMoniker": "D:\\Dokumenter\\GIT\\3Semester\\AfleveringM404\\Services\\CosmosDBService.cs",
               "RelativeDocumentMoniker": "Services\\CosmosDBService.cs",
               "ToolTip": "D:\\Dokumenter\\GIT\\3Semester\\AfleveringM404\\Services\\CosmosDBService.cs",
               "RelativeToolTip": "Services\\CosmosDBService.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAA4wCsAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAABwAAAAAAAAAAAAowDIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-20T08:46:38.849Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Contact.cs",
-              "DocumentMoniker": "D:\\Dokumenter\\GIT\\3Semester\\AfleveringM404\\Models\\Contact.cs",
-              "RelativeDocumentMoniker": "Models\\Contact.cs",
-              "ToolTip": "D:\\Dokumenter\\GIT\\3Semester\\AfleveringM404\\Models\\Contact.cs",
-              "RelativeToolTip": "Models\\Contact.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T08:12:44.596Z",
               "EditorCaption": ""
             }
           ]
