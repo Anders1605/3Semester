@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AfleveringM404")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+51097319548bcf0e0684f8d53ce92e8ec5df634c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b1b0fa499403467a9389257b5b56bbde4faca054")]
 [assembly: System.Reflection.AssemblyProductAttribute("AfleveringM404")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AfleveringM404")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

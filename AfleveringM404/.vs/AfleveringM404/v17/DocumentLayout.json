@@ -69,8 +69,7 @@
               "RelativeToolTip": "appsettings.Development.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-21T19:18:49.068Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-21T19:18:49.068Z"
             },
             {
               "$type": "Document",
@@ -82,8 +81,7 @@
               "RelativeToolTip": "Models\\SupportMessage.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-21T17:38:00.444Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-21T17:38:00.444Z"
             },
             {
               "$type": "Document",
@@ -120,8 +118,7 @@
               "RelativeToolTip": "Components\\Pages\\RequestSupport.razor",
               "ViewState": "AgIAADcAAAAAAAAAAAAiwEUAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-20T11:47:49.764Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-20T11:47:49.764Z"
             },
             {
               "$type": "Document",
@@ -155,8 +152,7 @@
               "RelativeToolTip": "Components\\Pages\\Home.razor",
               "ViewState": "AgIAAA4AAAAAAAAAAAAUwAwAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-20T09:21:46.026Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-20T09:21:46.026Z"
             },
             {
               "$type": "Document",
@@ -168,8 +164,7 @@
               "RelativeToolTip": "Services\\CosmosDBService.cs",
               "ViewState": "AgIAACQAAAAAAAAAAIAwwC8AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T08:46:38.849Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-20T08:46:38.849Z"
             }
           ]
         },
